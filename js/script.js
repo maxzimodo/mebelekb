@@ -1,13 +1,5 @@
 $(document).ready(function() {
 
-    //Preloader
-    var preLoader = $('.shim');
-    setTimeout(function() {
-        preLoader.css('opacity', '0');
-        setTimeout(function() { preLoader.css('display', 'none') }, 500)
-    }, 1000);
-
-
     //header and footer components import
     $('#header').load('header.html');
     $('#footer').load('footer.html');
@@ -19,12 +11,21 @@ $(document).ready(function() {
         });
     });
 
-
     //wow js
     new WOW().init();
 
     //parallax
     $('.parallax-window-main').parallax({imageSrc: 'img/first5.jpg'});
 
+    //Preloader
+    var preLoader = $('.shim');
+    setTimeout(function() {
+        preLoader.css('opacity', '0');
+        setTimeout(function() { preLoader.css('display', 'none') }, 500)
+    }, 1000);
+
 });
+
+
+
 
