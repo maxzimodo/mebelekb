@@ -22,7 +22,7 @@ $(document).ready(function() {
     setTimeout(function() {
         preLoader.css('opacity', '0');
         setTimeout(function() { preLoader.css('display', 'none') }, 500)
-    }, 2000);
+    }, 1500);
 
 });
 
