@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    //Preloader
+    var preLoader = $('.shim');
+    setTimeout(function() {
+        preLoader.css('opacity', '0');
+        setTimeout(function() { preLoader.css('display', 'none') }, 500)
+    }, 1000);
+
+
     //header and footer components import
     $('#header').load('header.html');
     $('#footer').load('footer.html');

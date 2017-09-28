@@ -375,7 +375,41 @@ main {
 form {
     text-align: left;
 }
+/*------------------------------------preloader-----------------------------------------------------------------------*/
+.shim {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: block;
+    transition: opacity .5s;
+    overflow: visible;
+}
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #1EB5F7;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin .7s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 /*---------------------------------------------------media-queries----------------------------------------------------*/
 @media (max-width: 992px) {
 
