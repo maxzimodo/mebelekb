@@ -330,7 +330,7 @@ main {
 }
 .modal-header,
 .modal-content {
-    padding: 30px;
+    padding: 25px;
     text-align: center;
 }
 .modal-header {
@@ -370,7 +370,7 @@ main {
     margin-bottom: 0;
 }
 .modal-content .btn {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 form {
     text-align: left;

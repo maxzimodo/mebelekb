@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
     //header and footer components import
     $('#header').load('header.html');
