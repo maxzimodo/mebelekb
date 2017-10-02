@@ -139,6 +139,10 @@ header .tel, footer .tel {
 footer {
     padding: 40px 0 40px;
 }
+header a, footer a {
+    color: inherit;
+    text-decoration: none;
+}
 /*---------------------------------------------------main-------------------------------------------------------------*/
 
 main {
@@ -226,7 +230,7 @@ main {
     padding-left: 70px;
     padding-right: 70px;
 }
-.fourth .col50 {
+.fourth .col50, .sixth .col50 {
     background-color: transparent;
     color: #000;
     text-align: left;
@@ -241,14 +245,16 @@ main {
     width: calc(100% - 107px);
     float: left;
 }
-.fourth .description span {
+.fourth .description span,
+.sixth .description span{
     margin: 10px 0;
     display: inline-block;
 }
-.fourth .col50 {
+.fourth .col50  {
     height: auto;
 }
-.fourth .row {
+.fourth .row ,
+.sixth .row{
     margin: 40px 0;
 }
 .fourth .row:last-child {
@@ -279,7 +285,31 @@ main {
 .map_and_address .description:last-child {
     margin: 0;
 }
-/*-----------------------------------------------------------modal----------------------------------------------------*/
+/*-----------------------------------------------------------home-----------------------------------------------------*/
+.home .first {
+    margin-bottom: 0;
+}
+.home .first .cellar .blueball span.inner{
+    margin-top: 5px;
+}
+.home .first .cellar ul {
+    margin-top: 33px;
+    margin-bottom: 62px;
+    margin-left: 144px;
+}
+.sixth .col50 {
+    height: 550px;
+}
+.sixth {
+    padding: 20px 0;
+}
+.sixth .description span {
+    margin-bottom: 40px;
+}
+
+
+
+    /*-------------------------------------------------------modal----------------------------------------------------*/
 .modal {
     position: absolute;
     z-index: 10000; /* 1 */

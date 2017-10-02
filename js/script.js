@@ -16,6 +16,7 @@ $(document).ready(function(){
 
     //parallax
     $('.parallax-window-main').parallax({imageSrc: 'img/first5.jpg'});
+    $('.parallax-window-home').parallax({imageSrc: 'img/for_home5.jpg'});
 
     //Preloader
     var preLoader = $('.shim');
