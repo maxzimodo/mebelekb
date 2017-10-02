@@ -108,9 +108,28 @@ input[type="text"], textarea {
     height: 397px;
     color: #fff;
 }
+.col33 {
+    width: calc(33.33% - 10px);
+}
 h3 {
     font-family: "open_sansbold", sans-serif;
     font-weight: 100;
+}
+.fourth .col33 {
+    margin-top: 50px;
+}
+.fourth .col33 .description {
+    font-size: 18px;
+    width: 100%;
+    padding: 0 10px;
+}
+.fourth .col33 img {
+    display: block;
+    margin: 20px auto;
+}
+.wrapper .modal-content {
+    width: 50%;
+    margin: auto;
 }
 /*---------------------------------------------------header and footer------------------------------------------------*/
 header {
@@ -346,9 +365,17 @@ main {
     width: 50%;
     /*background-color: green;*/
 }
+section.fourth.blue {
+    padding-top: 10px;
+}
 span.blue {
-    margin-bottom: 86px;
+    margin-bottom: 56px;
     display: block;
+}
+.banner-slider {
+    width: 100%;
+    height: 320px;
+    margin: 50px 0;
 }
     /*-------------------------------------------------------modal----------------------------------------------------*/
 .modal {
@@ -480,6 +507,27 @@ form {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+/*---------------------------------------------------unslider-dots----------------------------------------------------*/
+.unslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+.unslider-nav ol li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+    background: #000;
+    cursor: default;
 }
 /*---------------------------------------------------media-queries----------------------------------------------------*/
 @media (max-width: 992px) {

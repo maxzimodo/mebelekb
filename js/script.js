@@ -25,6 +25,14 @@ $(document).ready(function(){
         setTimeout(function() { preLoader.css('display', 'none') }, 500)
     }, 1500);
 
+    //unslider
+    $('.automatic-slider').unslider({
+        autoplay: true,
+        keys: false,
+        arrows: false,
+        delay: 5000
+    });
+
 });
 
 
