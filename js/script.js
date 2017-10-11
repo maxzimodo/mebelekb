@@ -37,5 +37,25 @@ $(document).ready(function(){
 });
 
 
+toastr.error("Продолжая пользование настоящим сайтом, Вы выражаете своё согласие на обработку Ваших персональных данных с испольованием интернет-сервисов \"Google analytics\" и \"Яндекс Метрика\". Порядок обработки Ваших персональных данных, а также реализуемые требования к их защите, содержатся в Политике ООО \"МебельКомплект\"","");
+
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": false,
+    "positionClass": "toast-top-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "3000",
+    "hideDuration": "1000",
+    "timeOut": "10000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+}
+
 
 
