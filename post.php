@@ -18,7 +18,7 @@ $backurl="http://site.ru/index.html";  // На какую страничку п�
 
 $name=$_POST['name'];
 
-$email=$_POST['surname'];
+$surname=$_POST['surname'];
 
 $msg=$_POST['message'];
 
@@ -29,7 +29,7 @@ $msg=$_POST['message'];
  // Отправляем письмо админу
 
 mail("$adminemail", "$date $time Сообщение
-от $name", "$msg");
+от $name", $surname, "$msg");
 
 
 
