@@ -536,6 +536,9 @@ form {
     font-size: 10px!important;
     font-weight: 100;
 }
+.toast a {
+    color: #fff!important;
+}
 /*---------------------------------------------------media-queries----------------------------------------------------*/
 @media (max-width: 1036px) {
     textarea {
