@@ -52,6 +52,9 @@ input[type="text"], textarea {
     margin: 10px 0 20px;
     resize: none;
 }
+input[type="submit"] {
+    border: none;
+}
 .wrapper {
     width: 1200px;
     margin: auto;
