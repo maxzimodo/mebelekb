@@ -8,6 +8,15 @@ $(document).ready(function(){
         $('.modal-toggle').on('click', function(e) {
             e.preventDefault();
             $('.modal').toggleClass('is-visible');
+            const mq = window.matchMedia( "(max-width: 1036px)" );
+            if (mq.matches) {
+                if($('.mob-modal').hasClass('is-visible')){
+                    $('body').css('position','fixed');
+                }
+                else{
+                    $('body').css('position','static');
+                }
+            }
         });
     });
 
@@ -36,7 +45,6 @@ $(document).ready(function(){
 
 });
 
-
 toastr.error("Продолжая пользование настоящим сайтом, Вы выражаете своё согласие на обработку Ваших персональных данных с испольованием интернет-сервисов \"Google analytics\" и \"Яндекс Метрика\". Порядок обработки Ваших персональных данных, а также реализуемые требования к их защите, содержатся в Политике ООО \"МебельКомплект\"","");
 
 toastr.options = {
@@ -49,13 +57,13 @@ toastr.options = {
     "onclick": null,
     "showDuration": "3000",
     "hideDuration": "1000",
-    "timeOut": "10000",
+    "timeOut": "1000",
     "extendedTimeOut": "1000",
     "showEasing": "swing",
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-}
+};
 
 
 
