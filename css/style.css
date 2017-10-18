@@ -308,6 +308,10 @@ main {
 .map_and_address .description:last-child {
     margin: 0;
 }
+.message-sent {
+    text-align: center;
+    margin-top: 30px;
+}
 /*-----------------------------------------------------------home-----------------------------------------------------*/
 .home .first {
     margin-bottom: 0;
@@ -474,7 +478,8 @@ span.blue {
 .modal-content .btn {
     margin-top: 15px;
 }
-form {
+label {
+    display: block;
     text-align: left;
 }
 /*------------------------------------preloader-----------------------------------------------------------------------*/

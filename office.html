@@ -240,13 +240,13 @@
         <div class="modal-content">
             <form action= "post.php" method= "POST">
                 <label for="name">Имя</label>
-                <input id="name" type="text" name="name">
+                <input id="name" type="text" name="name" required>
                 <label for="surname">Фамилия</label>
-                <input id="surname" type="text" name="surname">
+                <input id="surname" type="text" name="surname" required>
                 <label for="txt">Текст сообщения</label>
-                <textarea id="txt" rows="4" name="message"></textarea>
+                <textarea id="txt" rows="4" name="message" required></textarea>
+                <input type="submit" class="btn small hvr-pop" value="Отправить заявку">
             </form>
-            <input type="submit" class="btn small hvr-pop" value="Отправить заявку">
         </div>
     </section>
 
